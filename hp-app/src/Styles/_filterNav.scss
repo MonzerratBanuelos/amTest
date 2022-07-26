@@ -1,0 +1,33 @@
+.filter_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    .filterNav_btn {
+        width: 288px;
+        height: 67px;
+        border-radius: 4px;
+        background: $forth;
+        border: 2px solid $secondary;
+        color: $whiteFont;
+        font-weight: $semiBold;
+        font-family: $font;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 17px;
+
+        &:hover {
+            background: $third;
+            border: 2px solid $secondary;
+            ;
+        }
+
+        &:active {
+            background-color: $secondary;
+            border: 2px solid $secondary;
+        }
+    }
+
+
+}

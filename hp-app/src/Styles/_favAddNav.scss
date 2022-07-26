@@ -1,0 +1,28 @@
+.FavAdd_section {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+    margin: 0%;
+    background-color: $secondary;
+    margin: 0 0 0 50%;
+    width: 281px;
+    height: 36px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.FavAdd_btn {
+    background-color: transparent;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-left: 1px solid #403B6D;
+    border-right: 1px solid #403B6D;
+    color: $whiteFont;
+    font-weight: $semiBold ;
+}

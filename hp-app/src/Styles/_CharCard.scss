@@ -1,0 +1,86 @@
+.charCard_container {
+    width: 515px;
+    height: 265px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    font-family: $font;
+    margin: 1.5%;
+
+    p {
+        color: $main;
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+    .charCard_save {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4%;
+
+        img {
+            width: 1.5em;
+            height: 1.5em;
+        }
+    }
+}
+
+.charCard_imgContainer {
+    width: 40%;
+    border-radius: 16px 0 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+    }
+
+}
+
+.charCard_text {
+    width: 100%;
+    padding: 2%;
+
+    h2 {
+        color: black;
+        margin: 0%;
+        font-size: 30px;
+    }
+
+    p {
+        margin: 3%;
+    }
+}
+
+.homePage_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.Gryffindor {
+    background: linear-gradient($Gryffindor);
+}
+
+.Slytherin {
+    background: linear-gradient($Slytherin);
+}
+
+.Ravenclaw {
+    background: linear-gradient($Ravenclaw);
+}
+
+.Hufflepuff {
+    background: linear-gradient($Hufflepuff);
+}
