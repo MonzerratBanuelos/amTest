@@ -1,5 +1,4 @@
 function FilterNav({ rol, setRol, characters, setCharacters }) {
-    console.log(characters)
     const getStudent = () => {
         setRol('hogwartsStudent')
     }
@@ -15,7 +14,6 @@ function FilterNav({ rol, setRol, characters, setCharacters }) {
                 }}>ESTUDIANTES</button>
             <button className="filterNav_btn"
                 onClick={() => {
-                    console.log('Click en Staff')
                     getStaff()
                 }}>STAFF</button>
         </section>

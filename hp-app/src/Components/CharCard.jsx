@@ -1,4 +1,5 @@
 import saveImg from '../Assets/saveImg.png'
+import avatar from '../Assets/avatar.png'
 function CharCard({ characters }) {
     return (<div className='homePage_container'>
         {characters && characters.map((character) => (
@@ -9,10 +10,11 @@ function CharCard({ characters }) {
                 }}>
                 <section className={`charCard_imgContainer  ${character.house}`}>
                     <figure>
-                        <img src={character.image} alt={character.name} />
+                        <img src={character.image || avatar} alt={character.name} />
                     </figure>
                 </section>
-                <section className='charCard_text'>
+                <section className='charCard_text'
+                    style={character.alive === true ? { backgroundColor: 'white' } : { backgroundColor: '#CCCCCC' }}>
                     <section className='charCard_save'>
                         <p>{character.alive === true ? 'VIVO' : 'FINADO'} / {character.hogwartsStudent === true ? 'ESTUDIANTE' : 'STAFF'}</p>
                         <img src={saveImg} alt='Save Character' />

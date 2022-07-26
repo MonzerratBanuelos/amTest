@@ -1,0 +1,110 @@
+.modal_window {
+    width: 550px;
+    height: fit-content;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $whiteFont;
+    padding: 15px 30px 15px 30px;
+    z-index: 100;
+    font-family: $font;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+
+    h2 {
+        color: black;
+        margin: 2% 0 6% 0;
+        font-size: 24px;
+        font-weight: $semiBold;
+
+    }
+
+    label {
+        color: black;
+    }
+
+    .modal_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: initial;
+
+        button {
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            background-color: transparent;
+            border-width: 0.5px;
+        }
+    }
+
+    .fields_space {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .inputs_group {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .radiobtn {
+            align-self: stretch;
+        }
+
+        label {
+            font-size: 14px;
+            margin: 0.4rem;
+        }
+    }
+
+    .radiobtn {
+        label~input {
+            color: aqua;
+        }
+    }
+
+    .modal_input {
+        width: 240px;
+        height: 40px;
+        border-radius: 5px 5px 0 0;
+        background: rgba(38, 50, 56, 0.06);
+        border-radius: 5.33333px 5.33333px 0px 0px;
+        border: none;
+        border-bottom: 1px solid #263238;
+    }
+
+    .modal_btn {
+        width: 288px;
+        height: 67px;
+        border-radius: 4px;
+        background: $forth;
+        border: 2px solid $secondary;
+        color: $whiteFont;
+        font-weight: $semiBold;
+        font-family: $font;
+        margin: 2% 5% 0 5%;
+        font-size: 17px;
+        align-self: center;
+
+        &:hover {
+            background: $third;
+            border: 2px solid $secondary;
+            ;
+        }
+
+        &:active {
+            background-color: $secondary;
+            border: 2px solid $secondary;
+        }
+    }
+
+
+}

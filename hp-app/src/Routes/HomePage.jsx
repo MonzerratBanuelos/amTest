@@ -8,6 +8,7 @@ import HPLogo from '../Assets/Harry-Potter-logo.png'
 function HomePage() {
     const [characters, setCharacters] = useState([])
     const [rol, setRol] = useState('')
+    const [loading, setLoading] = useState(false)
     function getData() {
         const url = 'http://localhost:4001/characters'
         fetch(url).then((response) => response.json()).then((result) => {
@@ -27,11 +28,12 @@ function HomePage() {
     useEffect(() => {
         getData()
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [rol])
+    }, [rol, loading])
     return (
         <div className='homePage_main'>
+
             <img id='homePage_background' src={backgroundHG} alt='Harry Potter Background' />
-            <FavAddNav />
+            <FavAddNav loading={loading} setLoading={setLoading} />
             <img id='homePage_logo' src={HPLogo} alt='Harry Potter Logo' />
             <h2>Selecciona tu filtro</h2>
             <FilterNav characters={characters} setCharacters={setCharacters} rol={rol} setRol={setRol} />
