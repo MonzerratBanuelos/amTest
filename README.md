@@ -10,3 +10,6 @@ El usuario puede agregar personajes a la base de datos y visualizarlos en pantal
 
 Historia de usuario 4:
 El usuario puede guardar a sus personajes preferidos y visualizarlos en el menú 'Favoritos'
+
+Historia de usuario 5:
+EL usuario puede ingresar a la app desde una computadora de escritorio y/o su telefono mobil

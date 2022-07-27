@@ -1,11 +1,10 @@
 import addIcon from '../Assets/AddIcon.png'
-import favIcon from '../Assets/saveCharIcon.svg'
+import favsIcon from '../Assets/iconFavs.svg'
 import Modal from './Modal'
 import Favorites from './Favorites'
-import { useState } from 'react'
-function FavAddNav({ loading, setLoading }) {
-    const [isOpen, setIsOpen] = useState(false)
-    const [seeFav, setSeeFav] = useState(false)
+import { useSelector } from 'react-redux'
+function FavAddNav({ loading, setLoading, isOpen, setIsOpen, seeFav, setSeeFav }) {
+    const showFavs = useSelector((state) => state.fav.showFav)
     return (
         <section className='favAdd_Container'>
             <section className='FavAdd_section'>
@@ -17,7 +16,7 @@ function FavAddNav({ loading, setLoading }) {
                         setSeeFav(false)
                     }
                 }}>
-                    Favoritos<img sr={favIcon} alt='Save icon' />
+                    Favoritos<img sr={favsIcon} alt='Save icon' />
                 </button>
                 <button className='FavAdd_btn'
                     onClick={() => {
@@ -25,7 +24,7 @@ function FavAddNav({ loading, setLoading }) {
                     }}>Agregar<img src={addIcon} alt='Add icon' />
                 </button>
                 <section className='favAdd_Favs'>
-                    <Favorites seeFav={seeFav} onCloseFav={() => setSeeFav(false)} ></Favorites>
+                    {showFavs && <Favorites seeFav={seeFav} onCloseFav={() => setSeeFav(false)} ></Favorites>}
                 </section>
                 <Modal open={isOpen} onClose={() => setIsOpen(false)} loading={loading} setLoading={setLoading} >
                     Hello

@@ -1,14 +1,26 @@
+html {
+    width: 100%;
+    height: fit-content;
+}
+
 body {
     background-color: black;
     padding: 0%;
     margin: 0%;
     color: $whiteFont;
+    width: 100%;
 
     h2 {
         font-size: 36px;
         font-family: $font;
         margin-bottom: 40px;
         z-index: -3;
+
+        @media only screen and (max-width: 420px) {
+            font-size: 18px;
+        }
+
+
     }
 
     #homePage_background {
@@ -16,6 +28,10 @@ body {
         height: 100vh;
         position: fixed;
         z-index: -10;
+
+        @media only screen and (max-width: 420px) {
+            display: none;
+        }
     }
 
     #homePage_logo {
@@ -23,6 +39,12 @@ body {
         width: 290px;
         height: 80px;
         z-index: -3;
+
+        @media only screen and (max-width: 420px) {
+
+            width: 50%;
+        }
+
     }
 
     .homePage_main {
@@ -31,5 +53,19 @@ body {
         flex-direction: column;
         align-items: center;
         z-index: 0;
+        overflow: hidden;
+
+    }
+
+    .homePage_container {
+        @media only screen and (max-width: 420px) {
+            height: fit-content;
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            overflow: hidden;
+        }
     }
 }

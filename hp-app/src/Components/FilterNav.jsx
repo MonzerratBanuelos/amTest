@@ -10,7 +10,6 @@ function FilterNav({ rol, setRol, characters, setCharacters }) {
         <section className="filter_section">
             <button className="filterNav_btn"
                 onClick={() => {
-                    console.log('que pex')
                     getStudent()
                 }}>ESTUDIANTES</button>
             <button className="filterNav_btn"

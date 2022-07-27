@@ -105,7 +105,9 @@ function Modal({ open, onClose, loading, setLoading }) {
           <label>FOTOGRAFIA</label>
           <input type="file" />
         </section>
-        <button className="modal_btn">GUARDAR</button>
+        <section className="modalBtn_box">
+          <button className="modal_btn">GUARDAR</button>
+        </section>
       </form >
 
 

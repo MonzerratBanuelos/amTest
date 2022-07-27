@@ -1,18 +1,8 @@
 import React from "react"
-import { useDispatch, useSelector } from "react-redux"
+import { useSelector } from "react-redux"
 import trashIcon from '../Assets/trashIcon.svg'
-import { favActions } from "../store/fav-slice"
 function Favorites({ seeFav, onCloseFav }) {
-    const dispatch = useDispatch()
-    const removeFav = () => {
-        dispatch(
-            favActions.removeFav({
-            })
-        )
-    }
-
     const elementos = useSelector(state => state.fav.favList)
-    console.log(elementos)
     if (!seeFav) return null
     return (<>
         {elementos && elementos.map((favChar) => (

@@ -587,28 +587,6 @@
       "id": 26
     },
     {
-      "name": "Personaje prueba",
-      "dateOfBirth": "2022-07-01",
-      "eyeColour": "Blue",
-      "hairColour": "Brown",
-      "gender": "male",
-      "hogwartsStudent": true,
-      "hogwartsStaff": false,
-      "image": "",
-      "id": 27
-    },
-    {
-      "name": "mmmm",
-      "dateOfBirth": "2022-07-01",
-      "eyeColour": "noo",
-      "hairColour": "ffff",
-      "gender": "female",
-      "hogwartsStudent": true,
-      "hogwartsStaff": false,
-      "image": "",
-      "id": 28
-    },
-    {
       "name": "Profesor prueba ",
       "dateOfBirth": "2022-07-21",
       "eyeColour": "Black",
@@ -618,28 +596,6 @@
       "hogwartsStaff": true,
       "image": "",
       "id": 29
-    },
-    {
-      "name": "Pollito",
-      "dateOfBirth": "",
-      "eyeColour": "",
-      "hairColour": "",
-      "gender": "male",
-      "hogwartsStudent": true,
-      "hogwartsStaff": false,
-      "image": "",
-      "id": 30
-    },
-    {
-      "name": "Dean",
-      "dateOfBirth": "2022-06-28",
-      "eyeColour": "Brown",
-      "hairColour": "green",
-      "gender": "male",
-      "hogwartsStudent": false,
-      "hogwartsStaff": true,
-      "image": "",
-      "id": 31
     }
   ]
 }

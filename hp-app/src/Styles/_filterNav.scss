@@ -18,6 +18,11 @@
         margin-right: 5%;
         font-size: 17px;
 
+        @media only screen and (max-width: 420px) {
+            width: 140px;
+            height: 42px;
+        }
+
         &:hover {
             background: $third;
             border: 2px solid $secondary;

@@ -1,8 +1,8 @@
 import saveImg from '../Assets/saveImg.png'
 import avatar from '../Assets/avatar.png'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { favActions } from '../store/fav-slice'
-function CharCard({ char, name, image, id }) {
+function CharCard({ char, name, image, id, setSeeFav }) {
 
     const dispatch = useDispatch()
     const addFavorite = () => {
@@ -12,6 +12,11 @@ function CharCard({ char, name, image, id }) {
                 image: image,
                 id: id
             })
+        )
+    }
+    const showFavs = () => {
+        dispatch(
+            favActions.setShowFav()
         )
     }
     return (
@@ -29,7 +34,9 @@ function CharCard({ char, name, image, id }) {
                         src={saveImg}
                         alt='Save Character'
                         onClick={() => {
+                            showFavs()
                             addFavorite()
+                            setSeeFav(true)
                         }} />
                 </section>
                 <h2>{char.alive === true ? `${char.name}` : `+${char.name}`}</h2>
