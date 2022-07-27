@@ -7,3 +7,6 @@ El usuario puede visualizar los personajes de acuerdo a si es un 'Estudiante' o 
 
 Historia de usuario 3:
 El usuario puede agregar personajes a la base de datos y visualizarlos en pantalla en tiempo real
+
+Historia de usuario 4:
+El usuario puede guardar a sus personajes preferidos y visualizarlos en el menú 'Favoritos'

@@ -5,10 +5,17 @@ import FilterNav from '../Components/FilterNav'
 import FavAddNav from '../Components/FavAddNav'
 import backgroundHG from '../Assets/Background.png'
 import HPLogo from '../Assets/Harry-Potter-logo.png'
+import { useSelector } from 'react-redux'
 function HomePage() {
     const [characters, setCharacters] = useState([])
     const [rol, setRol] = useState('')
     const [loading, setLoading] = useState(false)
+
+    const favItems = useSelector((state) => state.fav.favList)
+    console.log(favItems)
+
+
+
     function getData() {
         const url = 'http://localhost:4001/characters'
         fetch(url).then((response) => response.json()).then((result) => {
@@ -34,10 +41,17 @@ function HomePage() {
 
             <img id='homePage_background' src={backgroundHG} alt='Harry Potter Background' />
             <FavAddNav loading={loading} setLoading={setLoading} />
+
             <img id='homePage_logo' src={HPLogo} alt='Harry Potter Logo' />
             <h2>Selecciona tu filtro</h2>
             <FilterNav characters={characters} setCharacters={setCharacters} rol={rol} setRol={setRol} />
-            <CharCard characters={characters} />
+            <div className='homePage_container'>
+                {characters.map((char) => {
+                    return < CharCard char={char} name={char.name} image={char.image} id={char.id} key={`${char.name}${char.id}`
+                    } />
+                })
+                }
+            </div>
         </div>
     )
 }

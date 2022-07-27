@@ -1,0 +1,31 @@
+.favorites_card {
+    width: 92%;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4%;
+    border-bottom: 1px solid $forth;
+    text-align: center;
+    align-items: center;
+
+    button {
+        background: transparent;
+        border: none;
+        display: flex;
+        height: fit-content;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+
+    }
+
+    img {
+        height: 90%;
+        width: 16%;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+}

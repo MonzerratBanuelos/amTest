@@ -618,6 +618,28 @@
       "hogwartsStaff": true,
       "image": "",
       "id": 29
+    },
+    {
+      "name": "Pollito",
+      "dateOfBirth": "",
+      "eyeColour": "",
+      "hairColour": "",
+      "gender": "male",
+      "hogwartsStudent": true,
+      "hogwartsStaff": false,
+      "image": "",
+      "id": 30
+    },
+    {
+      "name": "Dean",
+      "dateOfBirth": "2022-06-28",
+      "eyeColour": "Brown",
+      "hairColour": "green",
+      "gender": "male",
+      "hogwartsStudent": false,
+      "hogwartsStaff": true,
+      "image": "",
+      "id": 31
     }
   ]
 }
